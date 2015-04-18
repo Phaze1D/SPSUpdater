@@ -6,9 +6,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0"
-         prefWidth="200.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+         prefWidth="200.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1" stylesheets="/com/phaze1d/spsupdater/stylesheets/update_ss.css">
     <children>
-        <AnchorPane prefHeight="34.0" prefWidth="200.0" >
+        <AnchorPane prefHeight="34.0" prefWidth="200.0">
             <children>
                 <ProgressIndicator layoutX="4.0" layoutY="4.0" prefHeight="26.0" prefWidth="30.0"
                                    AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0"
