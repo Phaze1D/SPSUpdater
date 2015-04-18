@@ -1,12 +1,13 @@
 package com.phaze1d.spsupdater;
 
-import com.phaze1d.spsupdater.controllers.MainController;
+import com.phaze1d.spsupdater.controllers.AppCellController;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.effect.BoxBlur;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -18,13 +19,15 @@ import java.io.IOException;
  */
 public class Main extends Application {
 
-    private MainController mainController;
+    AppCellController controller;
 
     @Override
     public void start(Stage stage) throws Exception {
 
+        stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(createAppsScene());
         stage.show();
+
 
     }
 
@@ -40,8 +43,9 @@ public class Main extends Application {
      */
     private Scene createAppsScene()throws IOException{
 
-        mainController = new MainController();
-        Parent root = mainController.getView();
+        //MainController mainController = new MainController();
+        controller = new AppCellController(null);
+        Parent root = controller.getView();
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
         return scene;
