@@ -9,7 +9,6 @@ package com.phaze1d.spsupdater.controllers;
 
 
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Grid Page Controller
@@ -21,11 +20,11 @@ import java.net.URL;
  *      None
  *
  * View
- *      grid_page.fxml
+ *      grid_page_view.fxml
  */
 public class GridPageController extends Controller {
 
     public GridPageController() throws IOException {
-        super("/com/phaze1d/spsupdater/views/grid_page.fxml");
+        super("/com/phaze1d/spsupdater/views/grid_page_view.fxml");
     }
 }
