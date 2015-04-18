@@ -1,10 +1,10 @@
 package com.phaze1d.spsupdater;
 
 import com.phaze1d.spsupdater.controllers.AppCellController;
+import com.phaze1d.spsupdater.controllers.WindowBarController;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.effect.BoxBlur;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -19,7 +19,6 @@ import java.io.IOException;
  */
 public class Main extends Application {
 
-    AppCellController controller;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -44,7 +43,8 @@ public class Main extends Application {
     private Scene createAppsScene()throws IOException{
 
         //MainController mainController = new MainController();
-        controller = new AppCellController(null);
+        //AppCellController controller = new AppCellController(null);
+        WindowBarController controller = new WindowBarController();
         Parent root = controller.getView();
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);

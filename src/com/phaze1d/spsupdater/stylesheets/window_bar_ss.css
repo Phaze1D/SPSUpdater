@@ -1,0 +1,27 @@
+
+
+.window-root{
+    -fx-background-color: transparent;
+}
+
+.button{
+    -fx-background-insets: 0;
+    -fx-background-radius: 10;
+
+}
+
+#close-button{
+    -fx-background-color: rgba(220, 60, 60,1);
+}
+
+#min-button{
+    -fx-background-color: rgba(229, 228, 226,1);
+}
+
+#close-button:pressed{
+    -fx-background-color: rgba(220, 60, 60,.4);
+}
+
+#min-button:pressed{
+    -fx-background-color: rgba(229, 228, 226,.4);
+}
