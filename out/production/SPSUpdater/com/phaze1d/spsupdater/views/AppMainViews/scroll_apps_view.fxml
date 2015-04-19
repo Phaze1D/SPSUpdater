@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+
+<fx:root id="root-pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         prefHeight="470.0" prefWidth="450.0" stylesheets="/com/phaze1d/spsupdater/stylesheets/AppMainCSS/scroll_apps_ss.css"
+         type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ScrollPane id="scroll" fx:id="secView" fitToHeight="true" hbarPolicy="NEVER" maxHeight="-Infinity"
+                    maxWidth="-Infinity" pannable="true" prefHeight="450.0" prefWidth="450.0" vbarPolicy="NEVER">
+            <content>
+
+            </content>
+        </ScrollPane>
+
+    </children>
+</fx:root>

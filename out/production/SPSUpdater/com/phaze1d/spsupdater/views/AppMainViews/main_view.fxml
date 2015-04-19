@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0"
+         prefWidth="460.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1" stylesheets="/com/phaze1d/spsupdater/stylesheets/AppMainCSS/main_ss.css"
+         id="root-pane">
+    <children>
+
+        <AnchorPane prefHeight="550.0" prefWidth="460.0" fx:id="secView">
+
+
+        </AnchorPane>
+    </children>
+</fx:root>
