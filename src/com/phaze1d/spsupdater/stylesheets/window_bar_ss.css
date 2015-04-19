@@ -15,7 +15,7 @@
 }
 
 #min-button{
-    -fx-background-color: rgba(229, 228, 226,1);
+    -fx-background-color: rgba(111, 78, 55,1);
 }
 
 #close-button:pressed{
@@ -23,5 +23,5 @@
 }
 
 #min-button:pressed{
-    -fx-background-color: rgba(229, 228, 226,.4);
+    -fx-background-color: rgba(111, 78, 55,.4);
 }

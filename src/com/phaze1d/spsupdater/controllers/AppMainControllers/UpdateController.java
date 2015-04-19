@@ -1,4 +1,4 @@
-package com.phaze1d.spsupdater.controllers;
+package com.phaze1d.spsupdater.controllers.AppMainControllers;
 
 /**
  * IntelliJ IDEA.
@@ -8,8 +8,9 @@ package com.phaze1d.spsupdater.controllers;
  */
 
 
+import com.phaze1d.spsupdater.controllers.Controller;
+
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Update Controller
@@ -24,6 +25,6 @@ import java.net.URL;
 public class UpdateController extends Controller {
 
     public UpdateController() throws IOException {
-        super("/com/phaze1d/spsupdater/views/update_view.fxml");
+        super("/com/phaze1d/spsupdater/views/AppMainViews/update_view.fxml");
     }
 }

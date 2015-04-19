@@ -4,7 +4,7 @@
 
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0"
          prefWidth="440.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8"
-         xmlns:fx="http://javafx.com/fxml/1" stylesheets="/com/phaze1d/spsupdater/stylesheets/grid_page_ss.css">
+         xmlns:fx="http://javafx.com/fxml/1" stylesheets="/com/phaze1d/spsupdater/stylesheets/AppMainCSS/grid_page_ss.css">
     <children>
         <GridPane hgap="5.0" prefHeight="440.0" prefWidth="440.0" vgap="5.0" fx:id="secView">
             <columnConstraints>

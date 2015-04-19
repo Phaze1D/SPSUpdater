@@ -1,4 +1,4 @@
-package com.phaze1d.spsupdater.controllers;
+package com.phaze1d.spsupdater.controllers.AppMainControllers;
 
 /**
  * IntelliJ IDEA.
@@ -9,6 +9,8 @@ package com.phaze1d.spsupdater.controllers;
 
 
 
+import com.phaze1d.spsupdater.controllers.Controller;
+import com.phaze1d.spsupdater.controllers.WindowBarController;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
@@ -36,7 +38,7 @@ public class MainController extends Controller {
 
 
     public MainController() throws IOException {
-        super("/com/phaze1d/spsupdater/views/main_view.fxml");
+        super("/com/phaze1d/spsupdater/views/AppMainViews/main_view.fxml");
         createSubViews();
 
 

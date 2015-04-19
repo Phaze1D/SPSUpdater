@@ -1,19 +1,12 @@
 package com.phaze1d.spsupdater;
 
-import com.phaze1d.spsupdater.controllers.*;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
+import com.phaze1d.spsupdater.controllers.AppMainControllers.MainController;
 import javafx.application.Application;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.scene.Cursor;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.util.Duration;
 
 import java.io.IOException;
 
@@ -25,14 +18,13 @@ import java.io.IOException;
  */
 public class Main extends Application {
 
-    MainController controller;
-
     @Override
     public void start(Stage stage) throws Exception {
 
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(createAppsScene());
         stage.show();
+
 
 
     }
@@ -50,12 +42,7 @@ public class Main extends Application {
      */
     private Scene createAppsScene() throws IOException {
 
-        controller = new MainController();
-        //AppCellController controller = new AppCellController(null);
-        //WindowBarController controller = new WindowBarController();
-        //UpdateController controller = new UpdateController();
-        //GridPageController controller = new GridPageController();
-        //ScrollAppsController controller = new ScrollAppsController();
+        MainController controller = new MainController();
         Parent root = controller.getView();
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);

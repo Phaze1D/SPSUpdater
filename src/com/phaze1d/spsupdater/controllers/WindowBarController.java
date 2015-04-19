@@ -8,7 +8,6 @@ package com.phaze1d.spsupdater.controllers;
  */
 
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Window Bar Controller

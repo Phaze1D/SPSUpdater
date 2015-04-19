@@ -1,4 +1,4 @@
-package com.phaze1d.spsupdater.controllers;
+package com.phaze1d.spsupdater.controllers.AppMainControllers;
 
 /**
  * IntelliJ IDEA.
@@ -8,12 +8,9 @@ package com.phaze1d.spsupdater.controllers;
  */
 
 
-import javafx.event.EventHandler;
+import com.phaze1d.spsupdater.controllers.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.input.MouseDragEvent;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
@@ -31,24 +28,20 @@ import java.io.IOException;
  * View
  *      scroll_apps_view.fxml
  */
-public class ScrollAppsController extends Controller{
+public class ScrollAppsController extends Controller {
 
     @FXML private ScrollPane secView;
-    @FXML private AnchorPane contentView;
 
     private GridPageController gridPageController1;
 
-
     public ScrollAppsController() throws IOException {
-        super("/com/phaze1d/spsupdater/views/scroll_apps_view.fxml");
+        super("/com/phaze1d/spsupdater/views/AppMainViews/scroll_apps_view.fxml");
+
         createSubViews();
     }
 
     private void createSubViews() throws IOException{
-        gridPageController1 = new GridPageController();
-        gridPageController1.getView().setLayoutX(5);
-        gridPageController1.getView().setLayoutY(2);
-        contentView.getChildren().add(gridPageController1.getView());
+
 
     }
 

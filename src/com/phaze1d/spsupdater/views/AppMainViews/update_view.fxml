@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0"
          prefWidth="200.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8"
-         xmlns:fx="http://javafx.com/fxml/1" stylesheets="/com/phaze1d/spsupdater/stylesheets/update_ss.css"
+         xmlns:fx="http://javafx.com/fxml/1" stylesheets="/com/phaze1d/spsupdater/stylesheets/AppMainCSS/update_ss.css"
         id="root-pane">
     <children>
         <AnchorPane prefHeight="34.0" prefWidth="200.0">

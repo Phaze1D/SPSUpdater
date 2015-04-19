@@ -12,11 +12,11 @@ import java.net.URL;
  * Date: 4/17/15
  * Time: 5:32 PM
  */
-abstract class Controller {
+public abstract class Controller {
 
     private Pane view;
 
-    Controller(String viewUrl) throws IOException {
+    public Controller(String viewUrl) throws IOException {
         view = new Pane();
         FXMLLoader loader = new FXMLLoader(getClass().getResource(viewUrl));
         loader.setRoot(view);

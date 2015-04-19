@@ -1,4 +1,4 @@
-package com.phaze1d.spsupdater.controllers;
+package com.phaze1d.spsupdater.controllers.AppMainControllers;
 
 /**
  * IntelliJ IDEA.
@@ -8,15 +8,8 @@ package com.phaze1d.spsupdater.controllers;
  */
 
 
+import com.phaze1d.spsupdater.controllers.Controller;
 import com.phaze1d.spsupdater.models.AppModel;
-import javafx.embed.swing.SwingFXUtils;
-import javafx.fxml.FXML;
-import javafx.scene.effect.BoxBlur;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -31,12 +24,12 @@ import java.io.IOException;
  * View
  *      app_cell_view.fxml
  */
-public class AppCellController extends Controller{
+public class AppCellController extends Controller {
 
     private AppModel appModel;
 
     public AppCellController(AppModel appModel) throws IOException {
-        super("/com/phaze1d/spsupdater/views/app_cell_view.fxml");
+        super("/com/phaze1d/spsupdater/views/AppMainViews/app_cell_view.fxml");
         this.appModel = appModel;
         setUpInfo();
     }
