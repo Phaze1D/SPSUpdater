@@ -7,6 +7,11 @@ package com.phaze1d.spsupdater.controllers;
  * Time: 1:23 PM
  */
 
+
+
+import javafx.fxml.FXML;
+import javafx.scene.layout.AnchorPane;
+
 import java.io.IOException;
 
 
@@ -23,9 +28,40 @@ import java.io.IOException;
  */
 public class MainController extends Controller {
 
+    @FXML private AnchorPane secView;
+
+    private UpdateController updateController;
+    private WindowBarController windowBarController;
+    private ScrollAppsController scrollAppsController;
+
+
     public MainController() throws IOException {
         super("/com/phaze1d/spsupdater/views/main_view.fxml");
+        createSubViews();
+
 
     }
+
+    private void createSubViews() throws IOException{
+        updateController = new UpdateController();
+        updateController.getView().setLayoutY(513);
+        updateController.getView().setLayoutX(5);
+        secView.getChildren().add(updateController.getView());
+
+
+        windowBarController = new WindowBarController();
+        windowBarController.getView().setLayoutX(400);
+        windowBarController.getView().setLayoutY(4);
+        secView.getChildren().add(windowBarController.getView());
+
+        scrollAppsController = new ScrollAppsController();
+        scrollAppsController.getView().setLayoutY(37);
+        scrollAppsController.getView().setLayoutX(5);
+        secView.getChildren().add(scrollAppsController.getView());
+
+    }
+
+
+
 
 }

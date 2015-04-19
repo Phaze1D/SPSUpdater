@@ -16,7 +16,7 @@
                 <ProgressBar layoutX="23.0" layoutY="4.0" minHeight="-Infinity" minWidth="-Infinity"
                              prefHeight="12.0"
                              prefWidth="64.0" progress="0.5" AnchorPane.bottomAnchor="92.0"
-                             AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0"/>
+                             AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" visible="false"/>
                 <Pane id="app-icon" layoutX="23.0" layoutY="23.0" prefHeight="64.0" prefWidth="64.0"
                       AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0"
                       AnchorPane.topAnchor="23.0"/>

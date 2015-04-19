@@ -13,7 +13,7 @@
 #app-name {
     -fx-fill: white;
     -fx-font-smoothing-type: lcd;
-    -fx-effect: dropshadow(three-pass-box, black, 2, .5, 0, 4);
+    -fx-effect: dropshadow(three-pass-box, derive(grey, -60%), 2, .5, 0, 4);
 }
 
 #app-icon {
@@ -22,7 +22,7 @@
     -fx-background-repeat: stretch;
     -fx-background-size: cover;
 
-    -fx-effect: dropshadow(three-pass-box, derive(black, -20%), 10, 0, 0, 2);
+    -fx-effect: dropshadow(three-pass-box, derive(grey, -60%), 10, .7, 0, 0);
 
 }
 

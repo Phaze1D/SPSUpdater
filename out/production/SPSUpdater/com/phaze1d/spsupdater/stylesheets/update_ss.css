@@ -1,0 +1,9 @@
+
+
+#root-pane{
+    -fx-background-color: transparent;
+}
+
+.label{
+    -fx-text-fill: white;
+}

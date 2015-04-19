@@ -8,6 +8,9 @@ package com.phaze1d.spsupdater.controllers;
  */
 
 
+import javafx.fxml.FXML;
+import javafx.scene.layout.GridPane;
+
 import java.io.IOException;
 
 /**
@@ -24,7 +27,18 @@ import java.io.IOException;
  */
 public class GridPageController extends Controller {
 
+
+    @FXML private GridPane secView;
+
     public GridPageController() throws IOException {
         super("/com/phaze1d/spsupdater/views/grid_page_view.fxml");
+        createSubViews();
     }
+
+    private void createSubViews()throws IOException{
+        AppCellController appCellController = new AppCellController(null);
+        secView.add(appCellController.getView(),0,0);
+
+    }
+
 }

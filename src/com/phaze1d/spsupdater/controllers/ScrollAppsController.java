@@ -8,8 +8,14 @@ package com.phaze1d.spsupdater.controllers;
  */
 
 
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.input.MouseDragEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Scroll Applications Controller
@@ -27,7 +33,24 @@ import java.net.URL;
  */
 public class ScrollAppsController extends Controller{
 
+    @FXML private ScrollPane secView;
+    @FXML private AnchorPane contentView;
+
+    private GridPageController gridPageController1;
+
+
     public ScrollAppsController() throws IOException {
         super("/com/phaze1d/spsupdater/views/scroll_apps_view.fxml");
+        createSubViews();
     }
+
+    private void createSubViews() throws IOException{
+        gridPageController1 = new GridPageController();
+        gridPageController1.getView().setLayoutX(5);
+        gridPageController1.getView().setLayoutY(2);
+        contentView.getChildren().add(gridPageController1.getView());
+
+    }
+
+
 }
