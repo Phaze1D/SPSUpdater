@@ -1,0 +1,18 @@
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+}
+
+#no-notice{
+    -fx-text-fill: rgba(243, 229, 171,.95);
+    -fx-font-family: Avenir Next;
+    -fx-font-size: 51;
+    -fx-effect: innershadow(gaussian, black, 4.5, 0, 0, 1);
+}
+
+#copy-label{
+    -fx-text-fill: rgba(183, 169, 111,1);
+}

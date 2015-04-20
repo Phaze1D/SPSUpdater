@@ -7,6 +7,10 @@ package com.phaze1d.spsupdater.controllers;
  * Time: 7:24 PM
  */
 
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.stage.Stage;
+
 import java.io.IOException;
 
 /**
@@ -25,4 +29,19 @@ public class WindowBarController extends Controller{
     public WindowBarController() throws IOException {
         super("/com/phaze1d/spsupdater/views/window_bar_view.fxml");
     }
+
+    @FXML
+    private void closeClicked(Event event){
+        Stage stage = (Stage)getView().getScene().getWindow();
+        stage.close();
+
+    }
+
+    @FXML
+    private void minClicked(Event event){
+        Stage stage = (Stage)getView().getScene().getWindow();
+        stage.setIconified(true);
+    }
 }
+
+

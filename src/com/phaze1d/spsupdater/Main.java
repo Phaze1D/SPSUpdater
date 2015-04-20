@@ -1,6 +1,7 @@
 package com.phaze1d.spsupdater;
 
-import com.phaze1d.spsupdater.controllers.AppMainControllers.MainController;
+import com.phaze1d.spsupdater.controllers.LoginController;
+import com.phaze1d.spsupdater.controllers.MainController;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -18,14 +19,13 @@ import java.io.IOException;
  */
 public class Main extends Application {
 
+
     @Override
     public void start(Stage stage) throws Exception {
 
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(createAppsScene());
         stage.show();
-
-
 
     }
 
@@ -42,7 +42,9 @@ public class Main extends Application {
      */
     private Scene createAppsScene() throws IOException {
 
-        MainController controller = new MainController();
+        //MainController controller = new MainController();
+        LoginController controller = new LoginController();
+        controller.makeMovable();
         Parent root = controller.getView();
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);

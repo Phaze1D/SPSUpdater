@@ -7,7 +7,7 @@
 
 
 <fx:root id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-         prefHeight="110.0" prefWidth="110.0" stylesheets="/com/phaze1d/spsupdater/stylesheets/AppMainCSS/app_cell_ss.css"
+         prefHeight="110.0" prefWidth="110.0" stylesheets="/com/phaze1d/spsupdater/stylesheets/app_cell_ss.css"
          type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 
     <children>

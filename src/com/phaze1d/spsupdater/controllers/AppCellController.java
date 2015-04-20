@@ -1,4 +1,4 @@
-package com.phaze1d.spsupdater.controllers.AppMainControllers;
+package com.phaze1d.spsupdater.controllers;
 
 /**
  * IntelliJ IDEA.
@@ -8,7 +8,6 @@ package com.phaze1d.spsupdater.controllers.AppMainControllers;
  */
 
 
-import com.phaze1d.spsupdater.controllers.Controller;
 import com.phaze1d.spsupdater.models.AppModel;
 
 import java.io.IOException;
@@ -29,7 +28,7 @@ public class AppCellController extends Controller {
     private AppModel appModel;
 
     public AppCellController(AppModel appModel) throws IOException {
-        super("/com/phaze1d/spsupdater/views/AppMainViews/app_cell_view.fxml");
+        super("/com/phaze1d/spsupdater/views/app_cell_view.fxml");
         this.appModel = appModel;
         setUpInfo();
     }

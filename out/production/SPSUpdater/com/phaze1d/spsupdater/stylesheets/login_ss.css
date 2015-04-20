@@ -1,0 +1,77 @@
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab{
+
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: rgba(223, 209, 151,1);
+    -fx-background-insets: 5 5 0 5 ;
+    -fx-background-radius: 5 5 0 0;
+    -fx-border-color: rgba(203, 189, 131,1) rgba(203, 189, 131,1) transparent rgba(203, 189, 131,1);
+    -fx-border-width: 2;
+    -fx-border-radius: 5 5 0 0;
+    -fx-border-insets: 5 5 0 5;
+
+}
+
+.tab-header-area{
+    -fx-background-color: rgba(203, 189, 131,1);
+    -fx-background-radius: 15 15 0 0;
+}
+
+
+.tab:selected{
+    -fx-background-color:rgba(243, 229, 171,.95);
+    -fx-border-color: rgba(243, 229, 171,.95) rgba(243, 229, 171,.95) transparent rgba(243, 229, 171,.95);
+    -fx-border-width: 2;
+    -fx-border-radius: 5 5 0 0;
+}
+
+.tab .tab-label {
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+    -fx-font-family: Avenir Next;
+    -fx-font-size: 13;
+    -fx-font-weight: normal;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-font-family: Avenir Next;
+    -fx-text-fill: black;
+    -fx-background-insets: 0 0 -1 0, 1 1 -1 1;
+
+}
+
+.button{
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-color: rgba(203, 189, 131,1);
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+
+.button:pressed{
+    -fx-background-color: rgba(203, 189, 131,1);
+
+}
+
+#label-link:hover{
+    -fx-underline: true;
+}
+
+.studio-text{
+    -fx-fill: rgba(163, 149, 1,.95);
+
+
+}
+
+
+

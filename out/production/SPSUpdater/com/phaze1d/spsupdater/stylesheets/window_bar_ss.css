@@ -7,6 +7,9 @@
 .button{
     -fx-background-insets: 0;
     -fx-background-radius: 10;
+    -fx-border-width: 2;
+    -fx-border-color: rgba(223, 209, 151,1);
+    -fx-border-radius: 10;
 
 }
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0"
+         prefWidth="460.0" styleClass="root-pane" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <stylesheets>
+        <URL value="@/com/phaze1d/spsupdater/stylesheets/theme_ss.css"/>
+        <URL value="@/com/phaze1d/spsupdater/stylesheets/main_ss.css"/>
+    </stylesheets>
+
+    <children>
+        <AnchorPane fx:id="secView" prefHeight="550.0" prefWidth="460.0">
+            <children>
+
+                <AnchorPane layoutX="5" layoutY="513" prefHeight="34.0" prefWidth="200.0">
+                    <children>
+                        <ProgressIndicator layoutX="4.0" layoutY="4.0" prefHeight="26.0" prefWidth="30.0"
+                                           AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0"
+                                           AnchorPane.topAnchor="4.0"/>
+                        <Label layoutX="39.0" layoutY="8.0" text="Checking Updates" AnchorPane.bottomAnchor="7.5"
+                               AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="7.5">
+                            <font>
+                                <Font name="Avenir Next Regular" size="13.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+
+                <ScrollPane fitToHeight="true" hbarPolicy="NEVER" layoutX="5" layoutY="37" maxHeight="-Infinity"
+                            maxWidth="-Infinity" pannable="true" prefHeight="450.0" prefWidth="450.0"
+                            vbarPolicy="NEVER" visible="false">
+                    <content>
+                        <GridPane fx:id="gridTest" hgap="5.0" prefHeight="440.0" prefWidth="440.0" vgap="5.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="NEVER" minWidth="105.0" prefWidth="105.0"/>
+                                <ColumnConstraints hgrow="NEVER" minWidth="105.0" prefWidth="105.0"/>
+                                <ColumnConstraints hgrow="NEVER" minWidth="105.0" prefWidth="105.0"/>
+                                <ColumnConstraints hgrow="NEVER" minWidth="105.0" prefWidth="105.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="105.0" prefHeight="105.0" vgrow="NEVER"/>
+                                <RowConstraints minHeight="105.0" prefHeight="105.0" vgrow="NEVER"/>
+                                <RowConstraints minHeight="105.0" prefHeight="105.0" vgrow="NEVER"/>
+                                <RowConstraints minHeight="105.0" prefHeight="105.0" vgrow="NEVER"/>
+                            </rowConstraints>
+                        </GridPane>
+                    </content>
+                </ScrollPane>
+                <Text id="no-notice" fill="#f3e5ab" layoutX="28.0" layoutY="273.0" rotate="-39.8"
+                      text="No Current Apps">
+
+                </Text>
+                <Label id="copy-label" layoutX="278.0" layoutY="521.0" text="© 2015 Steady Path Studios">
+                    <font>
+                        <Font name="Avenir Next Regular" size="13.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</fx:root>

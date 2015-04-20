@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0"
+         prefWidth="308.0" styleClass="root-pane" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/phaze1d/spsupdater/stylesheets/theme_ss.css"/>
+        <URL value="@/com/phaze1d/spsupdater/stylesheets/login_ss.css"/>
+    </stylesheets>
+
+    <children>
+        <TabPane prefHeight="270.0" prefWidth="308.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab closable="false" text="User Login" >
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField layoutX="28.0" layoutY="76.0" prefHeight="26.0" prefWidth="253.0"
+                                           promptText="User Email"/>
+                                <PasswordField layoutX="28.0" layoutY="123.0" prefHeight="26.0" prefWidth="253.0"
+                                               promptText="Password"/>
+                                <Button fx:id="loginButton" layoutX="28.0" layoutY="160.0" mnemonicParsing="false" text="Login" onAction="#loginClicked">
+                                    <font>
+                                        <Font name="Avenir Next Regular" size="13.0"/>
+                                    </font>
+                                </Button>
+                                <Label id="label-link" layoutX="214.0" layoutY="156.0" text="Need Help?"
+                                       textFill="#0087ff">
+                                    <font>
+                                        <Font name="Avenir Next Regular" size="12.0"/>
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </Label>
+                                <Label layoutX="54.0" layoutY="210.0" text="Incorrect User Email or Password"
+                                       textFill="#f20000" visible="false">
+                                    <font>
+                                        <Font name="Avenir Next Regular" size="13.0"/>
+                                    </font>
+                                </Label>
+                                <Text styleClass="studio-text" layoutX="69.0" layoutY="39.0" text="Steady Path Studios">
+                                    <font>
+                                        <Font name="Avenir Next Regular" size="19.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="App Key">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField layoutX="28.0" layoutY="123.0" prefHeight="26.0" prefWidth="253.0"
+                                           promptText="Application Key"/>
+                                <Button layoutX="28.0" layoutY="160.0" mnemonicParsing="false" text="Get App">
+                                    <font>
+                                        <Font name="Avenir Next Regular" size="13.0"/>
+                                    </font>
+                                </Button>
+                                <Label layoutX="76.0" layoutY="210.0" text="Incorrect Application Key" textFill="RED"
+                                       visible="false">
+                                    <font>
+                                        <Font name="Avenir Next Regular" size="13.0"/>
+                                    </font>
+                                </Label>
+                                <Text styleClass="studio-text" layoutX="69.0" layoutY="39.0" text="Steady Path Studios">
+                                    <font>
+                                        <Font name="Avenir Next Regular" size="19.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</fx:root>
